@@ -1,12 +1,12 @@
 name := "hello"
 
-version := "1.0"
+version := "0.1"
 
 organization := "org.my"
 
-scalaVersion := "2.11.0"
+scalaVersion := "2.12.4"
 
-sbtVersion := "0.13.5"
+sbtVersion := "1.0.4"
 
 resolvers ++= Seq(
   "ibiblio" at "http://mirrors.ibiblio.org/pub/mirrors/maven2",
@@ -16,18 +16,19 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.apache.commons" % "commons-lang3" % "3.3.2",
-  "commons-io" % "commons-io" % "2.4",
+  "org.apache.commons" % "commons-lang3" % "3.7",
+  "org.apache.commons" % "commons-io" % "1.3.2",
   "com.google.guava" % "guava" % "18.0",
-  "org.scalaz" %% "scalaz-core" % "7.1.0",
-  "io.argonaut" %% "argonaut" % "6.1-M4",
-  "net.databinder" %% "unfiltered" % "0.8.1",
-  "net.databinder" %% "unfiltered-filter-async" % "0.8.1",
-  "net.databinder" %% "unfiltered-jetty" % "0.8.1",
-  "ch.qos.logback" % "logback-classic" % "1.1.2",
-  "org.slf4j" % "slf4j-api" % "1.7.7",
-  "org.commonjava.googlecode.markdown4j" % "markdown4j" % "2.2-cj-1.0",
-  "com.github.spullara.mustache.java" % "compiler" %    "0.8.16",
-  "org.jsoup" % "jsoup" % "1.7.3",
-  "org.specs2" %% "specs2" % "2.4.2" % "test"
+  "org.scalaz" %% "scalaz-core" % "7.2.18",
+  "ws.unfiltered" %% "unfiltered" % "0.9.1",
+  "ws.unfiltered" %% "unfiltered-filter-async" % "0.9.1",
+  "ws.unfiltered" %% "unfiltered-jetty" % "0.9.1",
+  "org.commonjava.googlecode.markdown4j" % "markdown4j" % "2.2-cj-1.1",
+  "com.github.spullara.mustache.java" % "compiler" % "0.9.5",
+  "org.jsoup" % "jsoup" % "1.11.2",
+  "org.scalactic" %% "scalactic" % "3.0.4",
+  "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2",
+  "org.json4s" %% "json4s-native" % "3.5.3",
+  "org.scalatest" %% "scalatest" % "3.0.4" % "test"
 )
