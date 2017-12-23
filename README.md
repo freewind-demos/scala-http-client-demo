@@ -1,9 +1,8 @@
-Common Dependencies Used in a Scala Project
-===========================================
+Scala Http Client Demo
+======================
 
-```
-brew install sbt
-sbt compile
-```
+Run `HttpClientDemo` from IDEA
 
-If failed, use my own `ivy-fetch` script to download dependencies to local cache manually.
+Resources
+---------
+- <https://github.com/softwaremill/sttp>
